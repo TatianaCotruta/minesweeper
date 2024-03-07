@@ -1,24 +1,40 @@
-.text-center {
-    margin-top: 100px;
-    text-align: center;
-}
-
-.outside-border {
+/* .outside-border {
     border: 5px solid rgb(236, 236, 236);
     display: inline-flex;
     border-style: outset;
-} 
+}  */
+
+.game-title {
+  margin-top: 50px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
 
 .board {
+  display: flex;
+  flex-direction: column;
   border: 8px solid #c6c6c6;
 }
 
-.internal-board {
+/* .board::after {
   border: 5px solid rgb(238, 238, 238);
   border-style: inset;
   display: flex;
   flex-direction: column;
-} 
+  content: " ";
+} */
+/* .internal-board {
+  border: 5px solid rgb(238, 238, 238);
+  border-style: inset;
+  display: flex;
+  flex-direction: column;
+}  */
 
 .row {
   display: flex;
