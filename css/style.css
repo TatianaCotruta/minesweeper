@@ -1,40 +1,35 @@
-/* .outside-border {
-    border: 5px solid rgb(236, 236, 236);
-    display: inline-flex;
+.outside-border {
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
     border-style: outset;
-}  */
+} 
 
 .game-title {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .game {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   flex-direction: column;
+  user-select: none;
+  gap: 50px;
 }
 
 .board {
   display: flex;
   flex-direction: column;
-  border: 8px solid #c6c6c6;
+  border: 7px solid #c6c6c6;
 }
 
-/* .board::after {
-  border: 5px solid rgb(238, 238, 238);
+.internal-board {
+  border: 4px solid white;
   border-style: inset;
   display: flex;
   flex-direction: column;
-  content: " ";
-} */
-/* .internal-board {
-  border: 5px solid rgb(238, 238, 238);
-  border-style: inset;
-  display: flex;
-  flex-direction: column;
-}  */
+} 
 
 .row {
   display: flex;
@@ -48,3 +43,45 @@
   border: 4px solid whitesmoke;
   border-style: outset;
 }
+
+.control-panel {
+  background-color: #c6c6c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.mines {
+  width: 55px;
+  height: 35px;
+  background-color: black;
+}
+
+.reset-btn {
+  width: 35px;
+  height: 35px;
+  background-color: #bebebe;
+  border: 4px solid rgb(255, 255, 255);
+  border-style: outset;
+}
+
+.timer {
+  width: 55px;
+  height: 35px;
+  background-color: black;
+}
+
+.internal-board-3 {
+  border: 3px solid white;
+  border-style: inset;
+  display: flex;
+  flex-direction: column;
+}
+
+.segment {
+  background-color: #c6c6c6;
+  height: 6px;
+}
+
+
