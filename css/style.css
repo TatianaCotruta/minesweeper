@@ -59,10 +59,10 @@
 }
 
 .reset-btn {
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   background-color: #bebebe;
-  border: 4px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-style: outset;
 }
 
@@ -72,7 +72,7 @@
   background-color: black;
 }
 
-.internal-board-3 {
+.internal-board-2 {
   border: 3px solid white;
   border-style: inset;
   display: flex;
