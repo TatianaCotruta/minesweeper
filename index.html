@@ -20,18 +20,19 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="img/favicon-32x32.png"
+      href="img/favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="img/favicon-16x16.png"
+      href="img/favicon_io/favicon-16x16.png"
     />
-    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="manifest" href="img/favicon_io/site.webmanifest" />
     <!-- Main Stylesheet Included -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="fonts.css">
   </head>
 
   <body>
@@ -39,134 +40,218 @@
     <header></header>
     <!-- Body Section -->
     <main>
-      <div class="game">
+      <div class="vertical-container game">
         <h1 class="game-title">Minisweeper</h1>
-        <div class="outside-border">
-          <div class="board">
-            <div class="internal-board">
+        <div class="vertical-container outset-border game-container">
+          <!-- <div class="vertical-container"> -->
+            <div class="vertical-container inset-border">
               <div class="control-panel">
-                <div class="internal-board-2">
+                <div class="vertical-container inset-border-sm">
                   <div class="mines"></div>
                 </div>
                 <button class="reset-btn">
-                  <img src="./img/smile-face.png" alt="smile-face">
+                  <img src="img/game/smile-face.png" alt="smile-face">
                 </button>
-                <div class="internal-board-2">
+                <button class="reset-btn hide">
+                  <img src="img/game/loser-face.png" alt="loser-face">
+                </button>
+                <div class="vertical-container inset-border-sm">
                   <div class="timer"></div>
                 </div>
               </div>
             </div>
             <div class="segment"></div>
-            <div class="internal-board">
+            <div class="vertical-container inset-border">
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <div class="cell hide">1</div>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
 
                 <div class="row">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
-                  <input class="cell" type="button">
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
+                  <input class="cell outset-border" type="button"/>
+                  <input class="cell hide"/>
                 </div>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </main>

@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "mine-sweeper";
+    src:
+      local("mine-sweeper"),
+      url("assets/fonts/mine-sweeper.ttf") format("ttf");
+  }
