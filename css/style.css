@@ -4,22 +4,8 @@
 }
 
 /* .body {
-  font-family: mine-sweeper;
+  font-family: Arial, Helvetica, sans-serif;
 } */
-
-.outset-border {
-  border: 4px solid white;
-  border-style: outset;
-} 
-
-.vertical-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.game-title {
-  margin-top: 70px;
-}
 
 .game {
   justify-content: center;
@@ -28,26 +14,29 @@
   gap: 50px;
 }
 
+.game-title {
+  margin-top: 70px;
+}
+
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .game-container {
   padding: 7px;
   background-color: var(--light-background-color);
 }
 
+.outset-border {
+  border: 4px solid white;
+  border-style: outset;
+} 
+
 .inset-border {
   border: 4px solid white;
   border-style: inset;
 } 
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.cell {
-  width: 24px;
-  height: 24px;
-  background-color: var(--light-background-color);
-}
 
 .control-panel {
   background-color: var(--light-background-color);
@@ -77,14 +66,89 @@
   border-style: inset;
 }
 
+.hide {
+  display: none;
+}
+
 .segment {
   background-color: var(--light-background-color);
   height: 6px;
 }
 
-.hide {
-  display: none;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
+.cell {
+  width: 24px;
+  height: 24px;
+  background-color: var(--light-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: large;
+}
 
+.cell-pressed,
+.cell-opened-empty {
+  border: 1px solid #808080;
+}
+
+.cell-opened-1::after {
+  content: "1";
+  color: blue;
+
+}
+
+.cell-opened-2::after {
+  content: "2";
+  color: green;
+}
+
+.cell-opened-3::after {
+  content: "3";
+  color: red;
+}
+
+.cell-opened-4::after {
+  content: "4";
+  color: darkblue;
+}
+
+.cell-opened-5::after {
+  content: "5";
+  color: maroon;
+}
+
+.cell-opened-6::after {
+  content: "6";
+  color: aqua;
+}
+
+.cell-opened-7::after {
+  content: "7";
+  color: black;
+}
+
+.cell-opened-8::after {
+  content: "8";
+  color: darkgray;
+}
+
+.cell-opened-mine {
+  background-image: url("/minesweeper/img/game/mine.png");
+  
+}
+
+.cell-opened-exploded-mine {
+  background-color: red;
+  background-image: url("/minesweeper/img/game/mine.png");
+}
+
+.cell-opened-flag {
+  background-image: url("/minesweeper/img/game/flag.png");
+}
 
