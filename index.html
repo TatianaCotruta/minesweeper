@@ -15,6 +15,7 @@
     <meta property="og:image" content="" />
 
     <title>Minesweeper</title>
+
     <!-- Favicon Included -->
     <link
       rel="icon"
@@ -44,19 +45,30 @@
         <div class="vertical-container outset-border game-container">
           <div class="vertical-container inset-border">
             <div class="control-panel">
+
               <div class="vertical-container inset-border-sm">
-                <div class="mines number-1">
+                <div class="counter">
+                  <div class="digit digit-0"></div>
+                  <div class="digit digit-1"></div>
+                  <div class="digit digit-2"></div>
                 </div>
               </div>
+
               <button class="reset-btn">
                 <img src="img/game/smile-face.png" alt="smile-face" />
               </button>
               <button class="reset-btn hide">
                 <img src="img/game/loser-face.png" alt="loser-face" />
               </button>
+
               <div class="vertical-container inset-border-sm">
-                <div class="timer"></div>
+                <div class="counter">
+                  <div class="digit digit-0"></div>
+                  <div class="digit digit-0"></div>
+                  <div class="digit digit-0"></div>
+                </div>
               </div>
+
             </div>
           </div>
           <div class="segment"></div>
@@ -74,8 +86,8 @@
             </div>
 
             <div class="row">
-              <div class="cell cell-pressed cell-opened-8"></div> 
-              <div class="cell cell-pressed cell-opened-mine"></div> 
+              <div class="cell cell-pressed cell-opened-8"></div>
+              <div class="cell cell-pressed cell-opened-mine"></div>
               <div class="cell cell-pressed cell-opened-exploded-mine"></div>
               <div class="cell cell-pressed cell-opened-flag"></div>
               <div class="cell outset-border"></div>
@@ -158,15 +170,15 @@
             </div>
 
             <div class="row">
+              <div class="cell cell-pressed"></div>
               <div class="cell outset-border"></div>
               <div class="cell outset-border"></div>
               <div class="cell outset-border"></div>
               <div class="cell outset-border"></div>
               <div class="cell outset-border"></div>
-              <div class="cell outset-border"></div>
-              <div class="cell outset-border"></div>
-              <div class="cell outset-border"></div>
-              <div class="cell outset-border"></div>
+              <div class="cell cell-pressed"></div>
+              <div class="cell cell-pressed"></div>
+              <div class="cell cell-pressed"></div>
             </div>
           </div>
           <!-- </div> -->
