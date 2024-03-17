@@ -29,7 +29,7 @@
 }
 
 .outset-border {
-  border: 4px solid white;
+  border: 3px solid white;
   border-style: outset;
 } 
 
@@ -48,8 +48,8 @@
 
 .mines,
 .timer {
-  width: 55px;
-  height: 35px;
+  width: 61.5px;
+  height: 37.5px;
   background-color: var(--dark-background-color);
 }
 
@@ -94,7 +94,26 @@
 
 .cell-pressed,
 .cell-opened-empty {
-  border: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  border-right: 1px solid #808080;
+}
+
+.cell-pressed-last-collumn,
+.cell-opened-empty-last-collumn {
+  border-bottom: 1px solid #808080;
+  border-right: none;
+}
+
+.cell-pressed-last-row,
+.cell-opened-empty-last-row {
+  border-bottom: none;
+  border-right: 1px solid #808080;
+}
+
+.last-cell-pressed-last-row,
+.last-cell-opened-empty-last-row {
+  border-bottom: none;
+  border-right: none;
 }
 
 .cell-opened-1::after {
@@ -139,16 +158,23 @@
 }
 
 .cell-opened-mine {
-  background-image: url("/minesweeper/img/game/mine.png");
+  background-image: url("../img/game/mine.png");
   
 }
 
 .cell-opened-exploded-mine {
   background-color: red;
-  background-image: url("/minesweeper/img/game/mine.png");
+  background-image: url("../img/game/mine.png");
 }
 
 .cell-opened-flag {
-  background-image: url("/minesweeper/img/game/flag.png");
+  background-image: url("../img/game/flag.png");
 }
 
+.number-0 {
+  background-image: url("../img/game/zero.png");
+}
+
+.number-1 {
+  background-image: url("../img/game/one.png");
+}
