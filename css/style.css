@@ -55,13 +55,15 @@
   padding: 2px;
 }
 
+/* Vertical sprite */
+/* 
 .counter .digit {
   width: 16px;
   height: 30px;
-  background-image: url("../img/game/counter/digits-sprite.png");
-  background-size: 22px auto;
+  background-image: url("../img/game/counter/digits-sprite-vertical.png");
+  background-size: 16px auto;
   margin-right: 2px;
-  background-position-x: -3px;
+  background-position-y: 0px;
 }
 
 .counter .digit:last-child {
@@ -69,51 +71,112 @@
 }
 
 .digit.digit-0 {
-  background-position-y:  -3px;
+  background-position-x:  -0px;
+}
+
+
+.digit.digit-0 {
+  background-position-y:  -2px;
 }
 
 .digit.digit-1 {
-  background-position-y:  -33px;
+  background-position-y:  -32px;
 }
 
 .digit.digit-2 {
-  background-position-y:  -63px;
+  background-position-y:  -62px;
 }
 
 .digit.digit-3 {
-  background-position-y:  -93px;
+  background-position-y:  -92px;
 }
 
 .digit.digit-4 {
-  background-position-y:  -123px;
+  background-position-y:  -121px;
 }
 
 .digit.digit-5 {
-  background-position-y:  -153px;
+  background-position-y:  -150px;
 }
 
 .digit.digit-6 {
-  background-position-y:  -183px;
+  background-position-y:  -180px;
 }
 
 .digit.digit-7 {
-  background-position-y:  -213px;
+  background-position-y:  -209px;
 }
 
 .digit.digit-8 {
-  background-position-y:  -243px;
+  background-position-y:  -239px;
 }
 
 .digit.digit-9 {
-  background-position-y:  -273px;
+  background-position-y:  -269px;
+} */
+
+
+/* Horizontal sprite */
+.counter .digit {
+  width: 16px;
+  height: 30px;
+  background-image: url("../img/game/counter/digits-sprite-horizontal.png");
+  background-size: auto 30px;
+  margin-right: 2px;
+  background-position-y: 0px;
+}
+
+.counter .digit:last-child {
+  margin-right: 0;
+}
+
+.digit.digit-0 {
+  background-position-x:  -0px;
+}
+
+.digit.digit-1 {
+  background-position-x:  -16px;
+}
+
+.digit.digit-2 {
+  background-position-x:  -32px;
+}
+
+.digit.digit-3 {
+  background-position-x:  -48px;
+}
+
+.digit.digit-4 {
+  background-position-x:  -63px;
+}
+
+.digit.digit-5 {
+  background-position-x:  -79px;
+}
+
+.digit.digit-6 {
+  background-position-x:  -94px;
+}
+
+.digit.digit-7 {
+  background-position-x:  -111px;
+}
+
+.digit.digit-8 {
+  background-position-x:  -126px;
+}
+
+.digit.digit-9 {
+  background-position-x:  -141px;
 }
 
 .reset-btn {
   width: 35px;
   height: 35px;
   background-color: var(--light-background-color);
-  border: 3px solid white;
+  border: 4px solid white;
   border-style: outset;
+  padding: 0px;
 }
 
 .inset-border-sm {
