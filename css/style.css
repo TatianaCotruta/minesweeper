@@ -3,10 +3,6 @@
   --dark-background-color: black;
 }
 
-/* .body {
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
 .game {
   justify-content: center;
   align-items: center;
@@ -29,15 +25,14 @@
 }
 
 .outset-border {
-  border: 3px solid white;
-  border-style: outset;
-} 
+  border: 3px outset white;
+}
 
 .inset-border {
-  border: 4px solid white;
-  border-style: inset;
-} 
+  border: 4px inset white;
+}
 
+/* Control panel */
 .control-panel {
   background-color: var(--light-background-color);
   display: flex;
@@ -46,24 +41,78 @@
   padding: 6px;
 }
 
-.mines,
-.timer {
-  width: 61.5px;
-  height: 37.5px;
+.control-panel .counter {
+  width: auto;
+  height: auto;
   background-color: var(--dark-background-color);
+  display: flex;
+  padding: 2px;
+}
+
+/* Horizontal sprite */
+.counter .digit {
+  width: 16px;
+  height: 30px;
+  background-image: url("../img/game/counter/digits-sprite-horizontal.png");
+  background-size: auto 30px;
+  margin-right: 2px;
+  background-position-y: 0;
+}
+
+.counter .digit:last-child {
+  margin-right: 0;
+}
+
+.digit.digit-0 {
+  background-position-x:  -0px;
+}
+
+.digit.digit-1 {
+  background-position-x:  -16px;
+}
+
+.digit.digit-2 {
+  background-position-x:  -32px;
+}
+
+.digit.digit-3 {
+  background-position-x:  -48px;
+}
+
+.digit.digit-4 {
+  background-position-x:  -63px;
+}
+
+.digit.digit-5 {
+  background-position-x:  -79px;
+}
+
+.digit.digit-6 {
+  background-position-x:  -94px;
+}
+
+.digit.digit-7 {
+  background-position-x:  -111px;
+}
+
+.digit.digit-8 {
+  background-position-x:  -126px;
+}
+
+.digit.digit-9 {
+  background-position-x:  -141px;
 }
 
 .reset-btn {
   width: 35px;
   height: 35px;
   background-color: var(--light-background-color);
-  border: 3px solid white;
-  border-style: outset;
+  border: 4px outset white;
+  padding: 0;
 }
 
 .inset-border-sm {
-  border: 3px solid white;
-  border-style: inset;
+  border: 3px inset white;
 }
 
 .hide {
@@ -90,91 +139,65 @@
   font-family: sans-serif;
   font-weight: 800;
   font-size: large;
+  border: 3px outset white;
 }
 
-.cell-pressed,
-.cell-opened-empty {
-  border-bottom: 1px solid #808080;
-  border-right: 1px solid #808080;
+[data-cell-value], .cell-pressed {
+  border: 0 solid #ababab;
+  border-top-width: 2px;
+  border-left-width: 2px;
 }
 
-.cell-pressed-last-collumn,
-.cell-opened-empty-last-collumn {
-  border-bottom: 1px solid #808080;
-  border-right: none;
-}
-
-.cell-pressed-last-row,
-.cell-opened-empty-last-row {
-  border-bottom: none;
-  border-right: 1px solid #808080;
-}
-
-.last-cell-pressed-last-row,
-.last-cell-opened-empty-last-row {
-  border-bottom: none;
-  border-right: none;
-}
-
-.cell-opened-1::after {
+[data-cell-value="1"]::after {
   content: "1";
   color: blue;
-
 }
 
-.cell-opened-2::after {
+[data-cell-value="2"]::after {
   content: "2";
   color: green;
 }
 
-.cell-opened-3::after {
+[data-cell-value="3"]::after {
   content: "3";
   color: red;
 }
 
-.cell-opened-4::after {
+[data-cell-value="4"]::after {
   content: "4";
   color: darkblue;
 }
 
-.cell-opened-5::after {
+[data-cell-value="5"]::after {
   content: "5";
   color: maroon;
 }
 
-.cell-opened-6::after {
+[data-cell-value="6"]::after {
   content: "6";
   color: aqua;
 }
 
-.cell-opened-7::after {
+[data-cell-value="7"]::after {
   content: "7";
   color: black;
 }
 
-.cell-opened-8::after {
+[data-cell-value="8"]::after {
   content: "8";
   color: darkgray;
 }
 
-.cell-opened-mine {
+[data-cell-value="mine"] {
   background-image: url("../img/game/mine.png");
-  
 }
 
-.cell-opened-exploded-mine {
+[data-cell-value="exploded"] {
   background-color: red;
   background-image: url("../img/game/mine.png");
 }
 
-.cell-opened-flag {
+[data-cell-value="flagged"] {
+  border: 3px outset white;
   background-image: url("../img/game/flag.png");
-}
-
-.number-0 {
-  background-image: url("../img/game/zero.png");
-}
-
-.number-1 {
-  background-image: url("../img/game/one.png");
 }
