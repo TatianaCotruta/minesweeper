@@ -2,4 +2,3 @@
 function clickBtn() {
     document.getElementById("button").click();
   }
-  

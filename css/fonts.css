@@ -2,5 +2,5 @@
     font-family: "NotoSansMono";
     src:
       local("NotoSansMono"),
-      url("fonts/NotoSansMono-ExtraBold.ttf") format("ttf");
+      url("../fonts/NotoSansMono-Black.ttf");
   }
