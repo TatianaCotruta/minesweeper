@@ -103,12 +103,25 @@
   background-position-x:  -141px;
 }
 
-.reset-btn {
-  width: 35px;
-  height: 35px;
+.control-panel .reset-btn {
   background-color: var(--light-background-color);
   border: 4px outset white;
-  padding: 0;
+}
+
+.reset-btn .button {
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/game/face.svg");
+  background-size: auto 35px;
+  background-position-y: 0;
+}
+
+.button.btn-smile-face {
+  background-position-x: 0px;
+}
+
+.button.btn-lose-face {
+  background-position-x: -35px;
 }
 
 .inset-border-sm {
@@ -136,9 +149,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
-  font-weight: 800;
-  font-size: large;
+  font-family: "NotoSansMono", sans-serif;
+  font-size: larger;
   border: 3px outset white;
 }
 
@@ -175,7 +187,7 @@
 
 [data-cell-value="6"]::after {
   content: "6";
-  color: aqua;
+  color: teal;
 }
 
 [data-cell-value="7"]::after {
@@ -185,19 +197,24 @@
 
 [data-cell-value="8"]::after {
   content: "8";
-  color: darkgray;
+  color: gray;
 }
 
-[data-cell-value="mine"] {
-  background-image: url("../img/game/mine.png");
+[data-cell-value="mine1"] {
+  background-image: url("../img/game/mine.svg");
 }
 
 [data-cell-value="exploded"] {
   background-color: red;
-  background-image: url("../img/game/mine.png");
+  background-image: url("../img/game/mine.svg");
 }
 
 [data-cell-value="flagged"] {
   border: 3px outset white;
-  background-image: url("../img/game/flag.png");
+  background-image: url("../img/game/flag.svg");
+}
+
+.img {
+  display: flex;
+  justify-content: center;
 }
