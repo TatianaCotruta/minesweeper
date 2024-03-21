@@ -1,10 +1,10 @@
 // Custom JS
 function clickBtn($element) {
-    const smileClass = 'btn-smile-face'
-    const sadClass = 'btn-lose-face'
-
-    $element.classList.toggle(smileClass)
-    $element.classList.toggle(sadClass)
+    // const smileClass = 'btn-smile-face'
+    // const sadClass = 'btn-lose-face'
+    //
+    // $element.classList.toggle(smileClass)
+    // $element.classList.toggle(sadClass)
 
     // Resets the table
     const cellList = document.querySelectorAll('.cell')
@@ -14,16 +14,16 @@ function clickBtn($element) {
 }
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const cellList = document.querySelectorAll('.cell')
-//
-//     for (const cell of cellList) {
-//         cell.addEventListener('mousedown', function () {
-//             cell.classList.add('cell-pressed')
-//         })
-//
-//         cell.addEventListener('mouseup', function () {
-//             cell.classList.remove('cell-pressed')
-//         })
-//     }
-// })
+document.addEventListener('DOMContentLoaded', function () {
+    const $button = document.querySelector('.reset-btn')
+
+    $button.addEventListener('mousedown', function () {
+        console.log('mousedown')
+        // Modify the styles of the button to have inset border
+    })
+
+    $button.addEventListener('mouseup', function () {
+        console.log('mouseup')
+        // Modify the styles of the button to have outset border
+    })
+})
