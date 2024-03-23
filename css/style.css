@@ -1,5 +1,6 @@
 :root {
   --light-background-color: #c6c6c6;
+  --pressed-boder-color: #ababab;
   --dark-background-color: black;
 }
 
@@ -28,8 +29,14 @@
   border: 3px outset white;
 }
 
+.outset-border.pressed {
+  border: 2px inset white;
+  border-top: 4px solid var(--pressed-boder-color);
+  border-left: 4px solid var(--pressed-boder-color);
+}
+
 .inset-border {
-  border: 4px inset white;
+  border: 3px inset white;
 }
 
 /* Control panel */
@@ -64,68 +71,58 @@
 }
 
 .digit.digit-0 {
-  background-position-x:  -0px;
+  background-position-x: -0px;
 }
 
 .digit.digit-1 {
-  background-position-x:  -16px;
+  background-position-x: -16px;
 }
 
 .digit.digit-2 {
-  background-position-x:  -32px;
+  background-position-x: -32px;
 }
 
 .digit.digit-3 {
-  background-position-x:  -48px;
+  background-position-x: -48px;
 }
 
 .digit.digit-4 {
-  background-position-x:  -63px;
+  background-position-x: -63px;
 }
 
 .digit.digit-5 {
-  background-position-x:  -79px;
+  background-position-x: -79px;
 }
 
 .digit.digit-6 {
-  background-position-x:  -94px;
+  background-position-x: -94px;
 }
 
 .digit.digit-7 {
-  background-position-x:  -111px;
+  background-position-x: -111px;
 }
 
 .digit.digit-8 {
-  background-position-x:  -126px;
+  background-position-x: -126px;
 }
 
 .digit.digit-9 {
-  background-position-x:  -141px;
+  background-position-x: -141px;
 }
 
-.control-panel .reset-btn {
-  background-color: var(--light-background-color);
-  border: 4px outset white;
+.reset-btn {
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/game/face.png");
+  background-size: auto 24px;
+  background-position-x: 0;
+  background-position-y: 2px;
+  background-repeat: no-repeat;
 }
 
-.reset-btn .button {
-  width: 35px;
-  height: 35px;
-  background-image: url("../img/game/face.svg");
-  background-size: auto 35px;
-  background-position-y: 0;
-}
 
-.button.btn-smile-face {
-  background-position-x: 0px;
-}
-
-.button.btn-lose-face {
-  background-position-x: -35px;
-}
-
-.inset-border-sm {
-  border: 3px inset white;
+.game-over .reset-btn {
+  background-position-x: -28px;
 }
 
 .hide {
@@ -154,7 +151,8 @@
   border: 3px outset white;
 }
 
-[data-cell-value], .cell-pressed {
+[data-cell-value],
+.cell-pressed {
   border: 0 solid #ababab;
   border-top-width: 2px;
   border-left-width: 2px;
@@ -202,16 +200,25 @@
 
 [data-cell-value="mine1"] {
   background-image: url("../img/game/mine.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
 }
 
 [data-cell-value="exploded"] {
   background-color: red;
   background-image: url("../img/game/mine.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
 }
 
 [data-cell-value="flagged"] {
   border: 3px outset white;
   background-image: url("../img/game/flag.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+  background-position: center;
 }
 
 .img {
