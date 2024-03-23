@@ -1,5 +1,6 @@
 :root {
   --light-background-color: #c6c6c6;
+  --pressed-boder-color: #ababab;
   --dark-background-color: black;
 }
 
@@ -28,8 +29,14 @@
   border: 3px outset white;
 }
 
+.outset-border.pressed {
+  border: 2px inset white;
+  border-top: 4px solid var(--pressed-boder-color);
+  border-left: 4px solid var(--pressed-boder-color);
+}
+
 .inset-border {
-  border: 4px inset white;
+  border: 3px inset white;
 }
 
 /* Control panel */
@@ -103,42 +110,19 @@
   background-position-x: -141px;
 }
 
-.control-panel .reset-btn {
-  background-color: var(--light-background-color);
-  border: 3px outset white;
-}
-
-.reset-btn .button {
+.reset-btn {
   width: 28px;
   height: 28px;
   background-image: url("../img/game/face.png");
   background-size: auto 24px;
+  background-position-x: 0;
   background-position-y: 2px;
   background-repeat: no-repeat;
 }
 
-.reset-btn-pressed {
-  border: 2px inset white;
-  border-top: 4px solid #ababab;
-  border-left: 4px solid #ababab;
-  width: 34px;
-  height: 34px;
-  background-image: url("../img/game/face.png");
-  background-size: auto 24px;
-  background-position-y: 2px;
-  background-repeat: no-repeat;
-}
 
-.button.btn-smile-face {
-  background-position-x: 0px;
-}
-
-.button.btn-lose-face {
+.game-over .reset-btn {
   background-position-x: -28px;
-}
-
-.inset-border-sm {
-  border: 3px inset white;
 }
 
 .hide {

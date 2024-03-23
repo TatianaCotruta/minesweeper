@@ -1,32 +1,20 @@
-// Custom JS
-function clickBtn($element) {
-    const smileClass = 'btn-smile-face'
-    const sadClass = 'btn-lose-face'
-    
-    $element.classList.toggle(smileClass)
-    $element.classList.toggle(sadClass)
-
-    // Resets the table
-    // const cellList = document.querySelectorAll('.cell')
-    // for (const cell of cellList) {
-    //     cell.removeAttribute('data-cell-value')
-    // }
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     const $button = document.querySelector('.reset-btn')
+    const $buttonParent = $button.parentElement
+    const onResetBtnInteractFn = () => {
+        $buttonParent.classList.toggle('pressed')
+    }
 
-    $button.addEventListener('mousedown', function () {
-        console.log('mousedown')
-        // Modify the styles of the button to have inset border
-        $button.className ='reset-btn-pressed';
-        console.log($button)
-    })
-
-    $button.addEventListener('mouseup', function () {
-        console.log('mouseup')
-        // Modify the styles of the button to have outset border
-        $button.className = 'reset-btn';
-        console.log($button)
-    })
+    $button.addEventListener('mousedown', onResetBtnInteractFn)
+    $button.addEventListener('mouseup', onResetBtnInteractFn)
 })
+
+function resetGame() {
+    const $cellList = document.querySelectorAll('.cell')
+
+    for (const $cell of $cellList) {
+        $cell.removeAttribute('data-cell-value')
+    }
+    
+    // TODO Reset counter
+}
